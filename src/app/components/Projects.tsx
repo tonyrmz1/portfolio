@@ -22,7 +22,7 @@ const projects = [
       'Frontend para app de armario digital. Permite añadir tus prendas de ropa para generar distintos outfits teniendo en cuenta diferentes parámetros.',
     technologies: ['React', 'TypeScript', 'Tailwind', 'Vitest'],
     githubUrl: 'https://github.com/tonyrmz1/outfitcreator-react-frontend',
-    liveUrl: '',
+    liveUrl: 'https://github.com/tonyrmz1/outfitcreator-react-frontend',
     stars: 0,
   },
   
