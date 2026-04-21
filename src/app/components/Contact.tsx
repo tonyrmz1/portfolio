@@ -92,7 +92,7 @@ export function Contact() {
             <div className="flex justify-center gap-4">
               <Button size="lg" variant="outline" asChild>
                 <a
-                  href="https://github.com/tonyrmz1"
+                  href="https://github.com/tonyrmz2"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2"
