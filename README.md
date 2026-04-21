@@ -1,7 +1,7 @@
 
   # Personal portfolio website
 
-  This is a code bundle for Personal portfolio website. The original project is available at https://www.figma.com/design/04JwHtUfae4rQtPn1uCkCs/Personal-portfolio-website.
+  This a personal portfolio web created using AI. 
 
   ## Running the code
 
