@@ -28,12 +28,12 @@ const projects = [
   
   {
     id: 3,
-    title: 'Outfit Creator IOS App',
+    title: 'Portfolio',
     description:
-      'Aplicación IOS para proyecto OutiftCreator, en proceso.',
-    technologies: ['IOS', 'Xcode', 'Swift'],
-    githubUrl: 'https://github.com/tonyrmz1/OutfitCreator---IOS',
-    liveUrl: 'https://github.com/tonyrmz1/OutfitCreator---IOS',
+      'Esta web de presentación también está accesible en mi Github. Ha sido creada mediante IA durante el proceso de aprendizaje.',
+    technologies: ['React', 'Vite', 'Tailwind'],
+    githubUrl: 'https://github.com/tonyrmz1/portfolio',
+    liveUrl: 'https://github.com/tonyrmz1/portfolio',
     stars: 0,
   },
 ];
