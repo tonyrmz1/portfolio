@@ -26,7 +26,7 @@ export function Hero() {
       <div className="absolute top-20 left-10 size-72 bg-emerald-400/20 rounded-full blur-3xl animate-pulse"></div>
       <div className="absolute bottom-20 right-10 size-96 bg-teal-400/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-4 relative z-10 pt-16 md:pt-0">
         <div className="max-w-4xl mx-auto text-center">
           {/* Profile Image Placeholder */}
           <div className="mb-8 inline-block">
