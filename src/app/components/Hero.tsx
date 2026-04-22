@@ -30,10 +30,12 @@ export function Hero() {
         <div className="max-w-4xl mx-auto text-center">
           {/* Profile Image Placeholder */}
           <div className="mb-8 inline-block">
-            <div className="size-32 rounded-full bg-gradient-to-br from-emerald-600 to-teal-600 p-1">
-              <div className="size-full rounded-full bg-white flex items-center justify-center text-4xl">
-                👨‍💻
-              </div>
+            <div className="size-32 rounded-full bg-gradient-to-br from-emerald-600 to-teal-600 p-1 overflow-hidden">
+              <img 
+                src="/src/resources/IMG_1064.jpeg" 
+                alt="Antonio" 
+                className="size-full rounded-full object-cover"
+              />
             </div>
           </div>
 
