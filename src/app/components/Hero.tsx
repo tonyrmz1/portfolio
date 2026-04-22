@@ -32,7 +32,7 @@ export function Hero() {
           <div className="mb-8 inline-block">
             <div className="size-32 rounded-full bg-gradient-to-br from-emerald-600 to-teal-600 p-1 overflow-hidden">
               <img 
-                src="/src/resources/IMG_1064.jpeg" 
+                src="/IMG_1064.jpeg" 
                 alt="Antonio" 
                 className="size-full rounded-full object-cover"
               />
