@@ -59,17 +59,17 @@ export function Header() {
           {/* Social Links */}
           <div className="hidden md:flex items-center gap-3">
             <Button variant="ghost" size="icon" asChild>
-              <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/tonyrmz1" target="_blank" rel="noopener noreferrer">
                 <Github className="size-5" />
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-              <a href="https://linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/antonio-marín-belmonte-9a8462120" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="size-5" />
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-              <a href="mailto:tu@email.com">
+              <a href="mailto:antonio.marin.belmonte@gmail.com">
                 <Mail className="size-5" />
               </a>
             </Button>
@@ -119,17 +119,17 @@ export function Header() {
             </button>
             <div className="flex items-center gap-3 pt-2">
               <Button variant="ghost" size="icon" asChild>
-                <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/tonyrmz1" target="_blank" rel="noopener noreferrer">
                   <Github className="size-5" />
                 </a>
               </Button>
               <Button variant="ghost" size="icon" asChild>
-                <a href="https://linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/antonio-marín-belmonte-9a8462120" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="size-5" />
                 </a>
               </Button>
               <Button variant="ghost" size="icon" asChild>
-                <a href="mailto:tu@email.com">
+                <a href="mailto:antonio.marin.belmonte@gmail.com">
                   <Mail className="size-5" />
                 </a>
               </Button>
