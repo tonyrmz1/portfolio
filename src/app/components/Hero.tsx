@@ -63,7 +63,14 @@ Actualmente enfocado en evolucionar hacia roles de Software Architect, con espec
                 Contáctame
               </a>
             </Button>
-            <Button size="lg" variant="outline">
+            <Button size="lg" variant="outline" onClick={() => {
+              const link = document.createElement('a');
+              link.href = '/Antonio_Marin_CV_EN_26.pdf';
+              link.download = 'Antonio_Marin_CV_EN_26.pdf';
+              document.body.appendChild(link);
+              link.click();
+              document.body.removeChild(link);
+            }}>
               <Download className="size-4 mr-2" />
               Descargar CV
             </Button>
