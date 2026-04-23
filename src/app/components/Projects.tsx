@@ -36,6 +36,16 @@ const projects = [
     liveUrl: 'https://github.com/tonyrmz1/portfolio',
     stars: 0,
   },
+  {
+    id: 4,
+    title: 'Hexagonal Architecture Example',
+    description:
+      'Ejemplo de arquitectura hexagonal con Spring Boot. Implementa una API REST para gestionar tareas, con una capa de dominio independiente de la infraestructura.',
+    technologies: ['Spring Boot', 'Spring Doc', 'Spring Security', 'JWT'],
+    githubUrl: 'https://github.com/tonyrmz1/ecommerce-hexagonal-demo',
+    liveUrl: 'https://github.com/tonyrmz1/ecommerce-hexagonal-demo',
+    stars: 0,
+  },
 ];
 
 export function Projects() {
