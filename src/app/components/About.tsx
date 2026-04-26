@@ -1,6 +1,6 @@
 import { Code, Palette, Zap, Smartphone, Server } from 'lucide-react';
 import { Card } from './ui/card';
-import { useTranslation } from '@/hooks/useTranslation';
+import { useTranslation } from '../../hooks/useTranslation';
 import React from 'react';
 
 const aboutCards = [
@@ -19,9 +19,9 @@ export function About() {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl text-center mb-4">
-            Sobre{' '}
+            {t('about.title1')}
             <span className="bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
-              Mí
+             {t('about.title2')}
             </span>
           </h2>
           <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">

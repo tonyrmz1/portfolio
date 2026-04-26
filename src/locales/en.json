@@ -16,14 +16,15 @@
     "greeting": "Hello, I'm",
     "name": "Antonio",
     "role": "Backend Developer",
-    "description": "I have 5+ years of experience in high-availability distributed systems. Specialized in Java and Spring Boot, with a focus on performance, scalability, and code quality.\nExperience in architectural design applying hexagonal architecture and event-driven architecture, using Kafka to build decoupled and resilient systems.\nI have an end-to-end vision thanks to my frontend experience with TypeScript, facilitating technical decisions aligned with the product.\nCurrently focused on evolving towards Software Architect roles, with special interest in integrating artificial intelligence in distributed systems.",
+    "description": "I have 5+ years of experience in high-availability distributed systems. \nSpecialized in Java and Spring Boot, with a focus on performance, scalability, and code quality.\nExperience in architectural design applying hexagonal architecture and event-driven architecture, using Kafka to build decoupled and resilient systems.\nI have an end-to-end vision thanks to my frontend experience with TypeScript, facilitating technical decisions aligned with the product.\nCurrently focused on evolving towards Software Architect roles, with special interest in integrating artificial intelligence in distributed systems.",
     "buttons": {
       "contact": "Contact Me",
       "downloadCV": "Download CV"
     }
   },
   "about": {
-    "title": "About Me",
+    "title1": "About",
+    "title2": " Me",
     "description": "Developer with over 5 years of experience working on projects aimed at creating secure, high-performance, and scalable solutions for companies across various sectors.",
     "sections": {
       "backend": {
@@ -59,11 +60,13 @@
     }
   },
   "experience": {
-    "title": "Professional Experience",
+    "title1": "Professional",
+    "title2": " Experience",
     "subtitle": "My professional trajectory in development"
   },
   "projects": {
-    "title": "My Projects",
+    "title1": "My",
+    "title2": " Projects",
     "subtitle": "A selection of my featured projects on GitHub",
     "buttons": {
       "code": "Code",
@@ -72,7 +75,8 @@
     "viewAll": "View all my projects on GitHub"
   },
   "contact": {
-    "title": "Let's Talk",
+    "title1": "Let's",
+    "title2": " Talk",
     "description": "Do you have a project in mind? I'd love to learn more!",
     "email": "Email",
     "phone": "Phone",

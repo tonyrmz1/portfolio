@@ -1,7 +1,7 @@
 import { Briefcase, Calendar } from 'lucide-react';
 import { Card } from './ui/card';
-import { useTranslation } from '@/hooks/useTranslation';
-import data from '@/data';
+import { useTranslation } from '../../hooks/useTranslation';
+import data from '../../data';
 import React from 'react';
 
 export function Experience() {
@@ -13,9 +13,9 @@ export function Experience() {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl text-center mb-4">
-            {t('experience.title')}{' '}
+            {t('experience.title1')}
             <span className="bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
-              Profesional
+              {t('experience.title2')}
             </span>
           </h2>
           <p className="text-center text-gray-600 mb-12">

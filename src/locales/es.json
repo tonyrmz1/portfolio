@@ -16,14 +16,15 @@
     "greeting": "Hola, soy",
     "name": "Antonio",
     "role": "Desarrollador Backend",
-    "description": "Cuento con 5+ años de experiencia en sistemas distribuidos de alta disponibilidad. Especializado en Java y Spring Boot, con foco en rendimiento, escalabilidad y calidad de código.\nExperiencia en diseño arquitectónico aplicando arquitectura hexagonal y event-driven architecture, utilizando Kafka para construir sistemas desacoplados y resilientes.\nCuento con visión end-to-end gracias a mi experiencia en frontend con TypeScript, facilitando decisiones técnicas alineadas con producto.\nActualmente enfocado en evolucionar hacia roles de Software Architect, con especial interés en la integración de inteligencia artificial en sistemas distribuidos.",
+    "description": "Cuento con 5+ años de experiencia en sistemas distribuidos de alta disponibilidad. \n Especializado en Java y Spring Boot, con foco en rendimiento, escalabilidad y calidad de código.\nExperiencia en diseño arquitectónico aplicando arquitectura hexagonal y event-driven architecture, utilizando Kafka para construir sistemas desacoplados y resilientes.\nCuento con visión end-to-end gracias a mi experiencia en frontend con TypeScript, facilitando decisiones técnicas alineadas con producto.\nActualmente enfocado en evolucionar hacia roles de Software Architect, con especial interés en la integración de inteligencia artificial en sistemas distribuidos.",
     "buttons": {
       "contact": "Contáctame",
       "downloadCV": "Descargar CV"
     }
   },
   "about": {
-    "title": "Sobre Mí",
+    "title1": "Sobre",
+    "title2": " Mí",
     "description": "Desarrollador con más de 5 años de experiencia trabajando en proyectos con el objetivo de crear soluciones seguras, de alto rendimiento y escalables para empresas de diversos sectores.",
     "sections": {
       "backend": {
@@ -59,11 +60,13 @@
     }
   },
   "experience": {
-    "title": "Experiencia Profesional",
+    "title1": "Experiencia",
+    "title2": " Profesional",
     "subtitle": "Mi trayectoria profesional en el desarrollo"
   },
   "projects": {
-    "title": "Mis Proyectos",
+    "title1": "Mis",
+    "title2": " Proyectos",
     "subtitle": "Una selección de mis proyectos destacados en GitHub",
     "buttons": {
       "code": "Código",
@@ -72,7 +75,8 @@
     "viewAll": "Ver todos mis proyectos en GitHub"
   },
   "contact": {
-    "title": "Hablemos Juntos",
+    "title1": "Contacta",
+    "title2": " conmigo",
     "description": "¿Tienes un proyecto en mente? ¡Me encantaría saber más!",
     "email": "Email",
     "phone": "Teléfono",

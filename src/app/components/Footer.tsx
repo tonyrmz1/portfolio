@@ -1,5 +1,5 @@
 import { Heart } from 'lucide-react';
-import { useTranslation } from '@/hooks/useTranslation';
+import { useTranslation } from '../../hooks/useTranslation';
 import React from 'react';
 
 export function Footer() {

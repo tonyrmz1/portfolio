@@ -1,7 +1,7 @@
 import { Github, Linkedin, Mail, Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { Button } from './ui/button';
-import { useTranslation } from '@/hooks/useTranslation';
+import { useTranslation } from '../../hooks/useTranslation';
 import {
   Select,
   SelectContent,
@@ -10,7 +10,7 @@ import {
   SelectValue,
 } from './ui/select';
 import React from 'react';
-import type { Language } from '@/context/LanguageContext';
+import type { Language } from '../../context/LanguageContext';
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

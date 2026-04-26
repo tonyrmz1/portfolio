@@ -1,6 +1,6 @@
 import { ArrowDown, Download } from 'lucide-react';
 import { Button } from './ui/button';
-import { useTranslation } from '@/hooks/useTranslation';
+import { useTranslation } from '../../hooks/useTranslation';
 import React from 'react';
 
 export function Hero() {

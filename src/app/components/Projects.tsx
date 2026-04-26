@@ -2,8 +2,8 @@ import { ExternalLink, Github, Star } from 'lucide-react';
 import { Button } from './ui/button';
 import { Card } from './ui/card';
 import { Badge } from './ui/badge';
-import { useTranslation } from '@/hooks/useTranslation';
-import data from '@/data';
+import { useTranslation } from '../../hooks/useTranslation';
+import data from '../../data';
 import React from 'react';
 
 export function Projects() {
@@ -15,9 +15,9 @@ export function Projects() {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl text-center mb-4">
-            {t('projects.title')}{' '}
+            {t('projects.title1')}
             <span className="bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
-              Proyectos
+              {t('projects.title2')}
             </span>
           </h2>
           <p className="text-center text-gray-600 mb-12">
