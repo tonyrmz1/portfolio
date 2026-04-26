@@ -2,65 +2,26 @@ import { ExternalLink, Github, Star } from 'lucide-react';
 import { Button } from './ui/button';
 import { Card } from './ui/card';
 import { Badge } from './ui/badge';
+import { useTranslation } from '@/hooks/useTranslation';
+import data from '@/data';
 import React from 'react';
 
-const projects = [
-  {
-    id: 1,
-    title: 'Outfit Creator - Backend',
-    description:
-      'Backend para app de armario digital. Permite añadir tus prendas de ropa para generar distintos outfits teniendo en cuenta diferentes parámetros.',
-    technologies: ['Spring Boot', 'Spring Doc', 'Spring Security', 'JWT'],
-    githubUrl: 'https://github.com/tonyrmz1/outfitcreator-springboot-backend',
-    liveUrl: 'https://github.com/tonyrmz1/outfitcreator-springboot-backend',
-    stars: 0,
-  },
-  {
-    id: 2,
-    title: 'Outfit Creator - Frontend',
-    description:
-      'Frontend para app de armario digital. Permite añadir tus prendas de ropa para generar distintos outfits teniendo en cuenta diferentes parámetros.',
-    technologies: ['React', 'TypeScript', 'Tailwind', 'Vitest'],
-    githubUrl: 'https://github.com/tonyrmz1/outfitcreator-react-frontend',
-    liveUrl: 'https://github.com/tonyrmz1/outfitcreator-react-frontend',
-    stars: 0,
-  },
-  
-  {
-    id: 3,
-    title: 'Portfolio',
-    description:
-      'Esta web de presentación también está accesible en mi Github. Ha sido creada mediante IA durante el proceso de aprendizaje.',
-    technologies: ['React', 'Vite', 'Tailwind'],
-    githubUrl: 'https://github.com/tonyrmz1/portfolio',
-    liveUrl: 'https://github.com/tonyrmz1/portfolio',
-    stars: 0,
-  },
-  {
-    id: 4,
-    title: 'Hexagonal Architecture Example',
-    description:
-      'Ejemplo de arquitectura hexagonal con Spring Boot. Implementa una API REST para gestionar pedidos, con una capa de dominio independiente de la infraestructura. Desarrollo utilizando IA para acelerar el proceso de aprendizaje siempre utilizando esta herramienta como apoyo y revisando el código.',
-    technologies: ['Spring Boot', 'Arquitectura Hexagonal', 'Tests de integración'],
-    githubUrl: 'https://github.com/tonyrmz1/ecommerce-hexagonal-demo',
-    liveUrl: 'https://github.com/tonyrmz1/ecommerce-hexagonal-demo',
-    stars: 0,
-  },
-];
-
 export function Projects() {
+  const { language, t } = useTranslation();
+  const projects = data[language].projects;
+
   return (
     <section id="proyectos" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl text-center mb-4">
-            Mis{' '}
+            {t('projects.title')}{' '}
             <span className="bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
               Proyectos
             </span>
           </h2>
           <p className="text-center text-gray-600 mb-12">
-            Una selección de mis proyectos destacados en GitHub
+            {t('projects.subtitle')}
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
@@ -102,7 +63,7 @@ export function Projects() {
                       className="flex items-center gap-2"
                     >
                       <Github className="size-4" />
-                      Código
+                      {t('projects.buttons.code')}
                     </a>
                   </Button>
                   <Button size="sm" className="flex-1" asChild>
@@ -113,7 +74,7 @@ export function Projects() {
                       className="flex items-center gap-2"
                     >
                       <ExternalLink className="size-4" />
-                      Demo
+                      {t('projects.buttons.demo')}
                     </a>
                   </Button>
                 </div>
@@ -130,7 +91,7 @@ export function Projects() {
                 className="flex items-center gap-2"
               >
                 <Github className="size-5" />
-                Ver todos mis proyectos en GitHub
+                {t('projects.viewAll')}
               </a>
             </Button>
           </div>

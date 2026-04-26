@@ -1,0 +1,105 @@
+{
+  "experiences": [
+    {
+      "id": 1,
+      "company": "Accenture",
+      "position": "Senior Backend Developer",
+      "period": "Marzo 2023 - Presente",
+      "description": "Modernización de sistemas legacy mediante migración a Spring Boot, reduciendo deuda técnica y mejorando la mantenibilidad. Implementé autenticación basada en JWT con Spring Security y reforcé la observabilidad mediante mejoras en logging y trazabilidad, facilitando la detección de incidencias y reduciendo tiempos de diagnóstico.\n Evoluciné módulos de un monolito modular hacia microservicios, mejorando la escalabilidad del sistema y permitiendo despliegues independientes, mayor resiliencia y desacoplamiento entre dominios.\n Participé en tareas de front elaborando interfaces de usuario pixel-perfect",
+      "technologies": [
+        "Java",
+        "Spring Boot",
+        "Kafka",
+        "Spring Security",
+        "logging",
+        "JWT",
+        "GitHub",
+        "Angular",
+        "TypeScript"
+      ]
+    },
+    {
+      "id": 2,
+      "company": "CompuGroup Medical",
+      "position": "Full Stack Developer",
+      "period": "Marzo 2021 - Marzo 2023",
+      "description": "Participé en la migración de una aplicación legacy a Spring Boot reduciendo deuda técnica y mejorando la mantenibilidad. Reforcé la observabilidad mediante mejoras en logging y trazabilidad, facilitando la detección de incidencias y reduciendo tiempos de diagnóstico.",
+      "technologies": [
+        "Java",
+        "Spring Boot",
+        "GIT",
+        "REST APIs",
+        "React",
+        "Javascript"
+      ]
+    },
+    {
+      "id": 3,
+      "company": "AireNetworks",
+      "position": "Android Developer",
+      "period": "Febrero 2018 - Febrero 2021",
+      "description": "Desarrollo del frontend de una aplicación Android multiplataforma (smartphone y tablet), optimizando la experiencia de usuario mediante interfaces adaptativas y asegurando rendimiento y estabilidad en distintos dispositivos.",
+      "technologies": [
+        "Java",
+        "Android Studio",
+        "React Native"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "Outfit Creator - Backend",
+      "description": "Backend para app de armario digital. Permite añadir tus prendas de ropa para generar distintos outfits teniendo en cuenta diferentes parámetros.",
+      "technologies": [
+        "Spring Boot",
+        "Spring Doc",
+        "Spring Security",
+        "JWT"
+      ],
+      "githubUrl": "https://github.com/tonyrmz1/outfitcreator-springboot-backend",
+      "liveUrl": "https://github.com/tonyrmz1/outfitcreator-springboot-backend",
+      "stars": 0
+    },
+    {
+      "id": 2,
+      "title": "Outfit Creator - Frontend",
+      "description": "Frontend para app de armario digital. Permite añadir tus prendas de ropa para generar distintos outfits teniendo en cuenta diferentes parámetros.",
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Tailwind",
+        "Vitest"
+      ],
+      "githubUrl": "https://github.com/tonyrmz1/outfitcreator-react-frontend",
+      "liveUrl": "https://github.com/tonyrmz1/outfitcreator-react-frontend",
+      "stars": 0
+    },
+    {
+      "id": 3,
+      "title": "Portfolio",
+      "description": "Esta web de presentación también está accesible en mi Github. Ha sido creada mediante IA durante el proceso de aprendizaje.",
+      "technologies": [
+        "React",
+        "Vite",
+        "Tailwind"
+      ],
+      "githubUrl": "https://github.com/tonyrmz1/portfolio",
+      "liveUrl": "https://github.com/tonyrmz1/portfolio",
+      "stars": 0
+    },
+    {
+      "id": 4,
+      "title": "Hexagonal Architecture Example",
+      "description": "Ejemplo de arquitectura hexagonal con Spring Boot. Implementa una API REST para gestionar pedidos, con una capa de dominio independiente de la infraestructura. Desarrollo utilizando IA para acelerar el proceso de aprendizaje siempre utilizando esta herramienta como apoyo y revisando el código.",
+      "technologies": [
+        "Spring Boot",
+        "Arquitectura Hexagonal",
+        "Tests de integración"
+      ],
+      "githubUrl": "https://github.com/tonyrmz1/ecommerce-hexagonal-demo",
+      "liveUrl": "https://github.com/tonyrmz1/ecommerce-hexagonal-demo",
+      "stars": 0
+    }
+  ]
+}

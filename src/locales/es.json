@@ -1,0 +1,93 @@
+{
+  "header": {
+    "title": "Mi Portafolio",
+    "nav": {
+      "inicio": "Inicio",
+      "sobreMi": "Sobre mí",
+      "experiencia": "Experiencia",
+      "proyectos": "Proyectos",
+      "contacto": "Contacto"
+    },
+    "language": {
+      "label": "Idioma"
+    }
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "name": "Antonio",
+    "role": "Desarrollador Backend",
+    "description": "Cuento con 5+ años de experiencia en sistemas distribuidos de alta disponibilidad. Especializado en Java y Spring Boot, con foco en rendimiento, escalabilidad y calidad de código.\nExperiencia en diseño arquitectónico aplicando arquitectura hexagonal y event-driven architecture, utilizando Kafka para construir sistemas desacoplados y resilientes.\nCuento con visión end-to-end gracias a mi experiencia en frontend con TypeScript, facilitando decisiones técnicas alineadas con producto.\nActualmente enfocado en evolucionar hacia roles de Software Architect, con especial interés en la integración de inteligencia artificial en sistemas distribuidos.",
+    "buttons": {
+      "contact": "Contáctame",
+      "downloadCV": "Descargar CV"
+    }
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "description": "Desarrollador con más de 5 años de experiencia trabajando en proyectos con el objetivo de crear soluciones seguras, de alto rendimiento y escalables para empresas de diversos sectores.",
+    "sections": {
+      "backend": {
+        "title": "Desarrollo Backend",
+        "description": "Experto en Java y ecosistema Spring Boot (Data, Security, etc). Cierta experiencia en Node.js"
+      },
+      "architecture": {
+        "title": "Arquitectura",
+        "description": "Experiencia en diseño monolitos modulares con transición a microservicios, arquitectura hexagonal y clean architecture. Conocimientos en arquitecturas basadas en eventos."
+      },
+      "frontend": {
+        "title": "Desarrollo Frontend",
+        "description": "+3 años de experiencia colaborando con equipos frontend utilizando herramientas como Angular y React."
+      },
+      "android": {
+        "title": "Desarrollo Android",
+        "description": "3 años de experiencia en desarrollo de aplicaciones Android con Java y Android Studio"
+      },
+      "optimization": {
+        "title": "Optimización",
+        "description": "Enfoque en rendimiento, accesibilidad y mejores prácticas para garantizar aplicaciones rápidas y accesibles."
+      }
+    },
+    "skills": {
+      "technicalSkills": "Habilidades Técnicas",
+      "languages": "Idiomas"
+    },
+    "languages": {
+      "spanish": "Español",
+      "spanishLevel": "Nativo",
+      "english": "Inglés",
+      "englishLevel": "Avanzado"
+    }
+  },
+  "experience": {
+    "title": "Experiencia Profesional",
+    "subtitle": "Mi trayectoria profesional en el desarrollo"
+  },
+  "projects": {
+    "title": "Mis Proyectos",
+    "subtitle": "Una selección de mis proyectos destacados en GitHub",
+    "buttons": {
+      "code": "Código",
+      "demo": "Demo"
+    },
+    "viewAll": "Ver todos mis proyectos en GitHub"
+  },
+  "contact": {
+    "title": "Hablemos Juntos",
+    "description": "¿Tienes un proyecto en mente? ¡Me encantaría saber más!",
+    "email": "Email",
+    "phone": "Teléfono",
+    "location": "Ubicación",
+    "location_value": "Murcia, España",
+    "linkedin": "LinkedIn",
+    "findMe": "También puedes encontrarme en estas plataformas",
+    "github": "GitHub",
+    "buttons": {
+      "sendEmail": "Enviar Email"
+    }
+  },
+  "footer": {
+    "madeWith": "Hecho con",
+    "by": "por Tonyrmz1",
+    "tech": "Desarrollado con React, TypeScript y Tailwind CSS"
+  }
+}

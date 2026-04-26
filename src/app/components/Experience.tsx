@@ -1,52 +1,25 @@
 import { Briefcase, Calendar } from 'lucide-react';
 import { Card } from './ui/card';
+import { useTranslation } from '@/hooks/useTranslation';
+import data from '@/data';
 import React from 'react';
 
-const experiences = [
-  {
-    id: 1,
-    company: 'Accenture',
-    position: 'Senior Backend Developer',
-    period: 'Marzo 2023 - Presente',
-    description:
-      'Modernización de sistemas legacy mediante migración a Spring Boot, reduciendo deuda técnica y mejorando la mantenibilidad. Implementé autenticación basada en JWT con Spring Security y reforcé la observabilidad mediante mejoras en logging y trazabilidad, facilitando la detección de incidencias y reduciendo tiempos de diagnóstico.\n '+
-      'Evoluciné módulos de un monolito modular hacia microservicios, mejorando la escalabilidad del sistema y permitiendo despliegues independientes, mayor resiliencia y desacoplamiento entre dominios.\n'+
-      ' Participé en tareas de front elaborando interfaces de usuario pixel-perfect',
-    technologies: ['Java', 'Spring Boot', 'Kafka', 'Spring Security', 'logging', 'JWT', 'GitHub', 'Angular', 'TypeScript'],
-  },
-  {
-    id: 2,
-    company: 'CompuGroup Medical',
-    position: 'Full Stack Developer',
-    period: 'Marzo 2021 - Marzo 2023',
-    description:
-      'Participé en la migración de una aplicación legacy a Spring Boot reduciendo deuda técnica y mejorando la mantenibilidad. Reforcé la observabilidad mediante mejoras en logging y trazabilidad, facilitando la detección de incidencias y reduciendo tiempos de diagnóstico.',
-    technologies: ['Java', 'Spring Boot', 'GIT', 'REST APIs', 'React', 'Javascript'],
-  },
-  {
-    id: 3,
-    company: 'AireNetworks',
-    position: 'Android Developer',
-    period: 'Febrero 2018 - Febrero 2021',
-    description:
-      'Desarrollo del frontend de una aplicación Android multiplataforma (smartphone y tablet), optimizando la experiencia de usuario mediante interfaces adaptativas y asegurando rendimiento y estabilidad en distintos dispositivos.',
-    technologies: ['Java', 'Android Studio', 'React Native'],
-  },
-];
-
 export function Experience() {
+  const { language, t } = useTranslation();
+  const experiences = data[language].experiences;
+
   return (
     <section id="experiencia" className="py-20 bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl text-center mb-4">
-            Experiencia{' '}
+            {t('experience.title')}{' '}
             <span className="bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
               Profesional
             </span>
           </h2>
           <p className="text-center text-gray-600 mb-12">
-            Mi trayectoria profesional en el desarrollo web
+            {t('experience.subtitle')}
           </p>
 
           <div className="relative">
@@ -79,7 +52,7 @@ export function Experience() {
                       </div>
                     </div>
 
-                    <p className="text-gray-600 mb-4">{exp.description}</p>
+                    <p className="text-gray-600 mb-4 whitespace-pre-line">{exp.description}</p>
 
                     <div className="flex flex-wrap gap-2">
                       {exp.technologies.map((tech) => (

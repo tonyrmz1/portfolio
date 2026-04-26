@@ -1,76 +1,54 @@
 import { Code, Palette, Zap, Smartphone, Server } from 'lucide-react';
 import { Card } from './ui/card';
+import { useTranslation } from '@/hooks/useTranslation';
 import React from 'react';
 
+const aboutCards = [
+  { icon: Server, colorBg: 'bg-teal-100', colorIcon: 'text-teal-600', key: 'backend' },
+  { icon: Code, colorBg: 'bg-emerald-100', colorIcon: 'text-emerald-600', key: 'architecture' },
+  { icon: Palette, colorBg: 'bg-cyan-100', colorIcon: 'text-cyan-600', key: 'frontend' },
+  { icon: Smartphone, colorBg: 'bg-teal-100', colorIcon: 'text-teal-600', key: 'android' },
+  { icon: Zap, colorBg: 'bg-emerald-100', colorIcon: 'text-emerald-600', key: 'optimization' },
+];
+
 export function About() {
+  const { t } = useTranslation();
+
   return (
     <section id="sobre-mi" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl text-center mb-4">
-            Sobre <span className="bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">Mí</span>
+            Sobre{' '}
+            <span className="bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
+              Mí
+            </span>
           </h2>
           <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-            Desarrollador con más de 5 años de experiencia trabajando en proyectos con el objetivo de crear soluciones seguras, de alto rendimiento y escalables para empresas de diversos sectores.
+            {t('about.description')}
           </p>
 
           <div className="grid md:grid-cols-3 gap-6 mb-12">
-          <Card className="p-6 hover:shadow-lg transition-shadow border-2 hover:border-teal-200">
-              <div className="size-12 rounded-full bg-teal-100 flex items-center justify-center mb-4">
-                <Server className="size-6 text-teal-600" />
-              </div>
-              <h3 className="text-xl mb-2">Desarrollo Backend</h3>
-              <p className="text-gray-600">
-                Experto en Java y ecosistema Spring Boot (Data, Security, etc). Cierta experiencia en Node.js
-              </p>
-            </Card>
-            
-            <Card className="p-6 hover:shadow-lg transition-shadow border-2 hover:border-emerald-200">
-              <div className="size-12 rounded-full bg-emerald-100 flex items-center justify-center mb-4">
-                <Code className="size-6 text-emerald-600" />
-              </div>
-              <h3 className="text-xl mb-2">Arquitectura</h3>
-              <p className="text-gray-600">
-                Experiencia en diseño monolitos modulares con transición a microservicios, arquitectura hexagonal y clean architecture. Conocimientos en arquitecturas basadas en eventos.
-              </p>
-            </Card>
-
-            <Card className="p-6 hover:shadow-lg transition-shadow border-2 hover:border-cyan-200">
-              <div className="size-12 rounded-full bg-cyan-100 flex items-center justify-center mb-4">
-                <Palette className="size-6 text-cyan-600" />
-              </div>
-              <h3 className="text-xl mb-2">Desarrollo Frontend</h3>
-              <p className="text-gray-600">
-                +3 años de experiencia colaborando con equipos frontend utilizando herramientas como Angular y React.
-              </p>
-            </Card>
-
-            <Card className="p-6 hover:shadow-lg transition-shadow border-2 hover:border-cyan-200">
-              <div className="size-12 rounded-full bg-teal-100 flex items-center justify-center mb-4">
-                <Smartphone className="size-6 text-teal-600" />
-              </div>
-              <h3 className="text-xl mb-2">Desarrollo Android</h3>
-              <p className="text-gray-600">
-                3 años de experiencia en desarrollo de aplicaciones Android con Java y Android Studio
-              </p>
-            </Card>
-
-            <Card className="p-6 hover:shadow-lg transition-shadow border-2 hover:border-cyan-200">
-              <div className="size-12 rounded-full bg-emerald-100 flex items-center justify-center mb-4">
-                <Zap className="size-6 text-emerald-600" />
-              </div>
-              <h3 className="text-xl mb-2">Optimización</h3>
-              <p className="text-gray-600">
-                Enfoque en rendimiento, accesibilidad y mejores prácticas para garantizar
-                aplicaciones rápidas y accesibles.
-              </p>
-            </Card>
-
+            {aboutCards.map((card) => {
+              const Icon = card.icon;
+              const borderColor = card.colorBg.replace('100', '200').replace('bg-', 'border-');
+              return (
+                <Card key={card.key} className={`p-6 hover:shadow-lg transition-shadow border-2 hover:${borderColor}`}>
+                  <div className={`size-12 rounded-full ${card.colorBg} flex items-center justify-center mb-4`}>
+                    <Icon className={`size-6 ${card.colorIcon}`} />
+                  </div>
+                  <h3 className="text-xl mb-2">{t(`about.sections.${card.key}.title`)}</h3>
+                  <p className="text-gray-600">
+                    {t(`about.sections.${card.key}.description`)}
+                  </p>
+                </Card>
+              );
+            })}
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-2xl mb-4">Habilidades Técnicas</h3>
+              <h3 className="text-2xl mb-4">{t('about.skills.technicalSkills')}</h3>
               <div className="flex flex-wrap gap-2">
                 {[
                   'Java',
@@ -92,7 +70,6 @@ export function About() {
                   'Microservicios',
                   'SOLID',
                   'Arquitectura Hexagonal',
-          
                 ].map((skill) => (
                   <span
                     key={skill}
@@ -105,12 +82,12 @@ export function About() {
             </div>
 
             <div>
-              <h3 className="text-2xl mb-4">Idiomas</h3>
+              <h3 className="text-2xl mb-4">{t('about.skills.languages')}</h3>
               <div className="space-y-3">
                 <div>
                   <div className="flex justify-between mb-1">
-                    <span>Español</span>
-                    <span className="text-gray-600">Nativo</span>
+                    <span>{t('about.languages.spanish')}</span>
+                    <span className="text-gray-600">{t('about.languages.spanishLevel')}</span>
                   </div>
                   <div className="h-2 bg-gray-200 rounded-full">
                     <div className="h-2 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-full w-full"></div>
@@ -118,8 +95,8 @@ export function About() {
                 </div>
                 <div>
                   <div className="flex justify-between mb-1">
-                    <span>Inglés</span>
-                    <span className="text-gray-600">Avanzado</span>
+                    <span>{t('about.languages.english')}</span>
+                    <span className="text-gray-600">{t('about.languages.englishLevel')}</span>
                   </div>
                   <div className="h-2 bg-gray-200 rounded-full">
                     <div className="h-2 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-full w-[90%]"></div>
