@@ -65,8 +65,8 @@ export function Hero() {
             </Button>
             <Button size="lg" variant="outline" onClick={() => {
               const link = document.createElement('a');
-              link.href = '/Antonio_Marin_CV_EN_26.pdf';
-              link.download = 'Antonio_Marin_CV_EN_26.pdf';
+              link.href = '/CV_Antonio_MarinBelmonte_c.pdf';
+              link.download = 'CV_Antonio_MarinBelmonte_c.pdf';
               document.body.appendChild(link);
               link.click();
               document.body.removeChild(link);
